@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <com.sgb.meitucamera.view.TouchImageView
+        android:id="@+id/edit_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/beautify_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tab_bg" >
+
+            <Button
+                android:id="@+id/edit_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/back_btn"
+                android:padding="3dip"
+                android:text="返回"
+                android:textColor="#F5F5F5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="3dip"
+                android:text="美  化"
+                android:textColor="#F5F5F5"
+                android:textSize="15dip" />
+
+            <Button
+                android:id="@+id/edit_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/ok_btn"
+                android:padding="3dip"
+                android:text="分享"
+                android:textColor="#F5F5F5"
+                android:textSize="12dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/toolbar_bg"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/r_bg"
+                android:drawableTop="@drawable/select_r1"
+                android:paddingTop="3dip"
+                android:text="@string/edit" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/r_bg"
+                android:drawableTop="@drawable/select_r3"
+                android:paddingTop="3dip"
+                android:text="@string/cosmesis" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/r_bg"
+                android:drawableTop="@drawable/select_r4"
+                android:paddingTop="3dip"
+                android:text="@string/effect" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/r_bg"
+                android:drawableTop="@drawable/select_r5"
+                android:paddingTop="3dip"
+                android:text="@string/frame" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="50dp"
+            android:background="#80000000"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r1"
+                    android:paddingTop="3dip"
+                    android:text="圆角效果" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r3"
+                    android:paddingTop="3dip"
+                    android:text="倒影效果" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r4"
+                    android:paddingTop="3dip"
+                    android:text="怀旧效果" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r1"
+                    android:paddingTop="3dip"
+                    android:text="浮雕效果" />
+
+                <Button
+                    android:id="@+id/button9"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r3"
+                    android:paddingTop="3dip"
+                    android:text="底片效果" />
+
+                <Button
+                    android:id="@+id/button10"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r4"
+                    android:paddingTop="3dip"
+                    android:text="光照效果" />
+
+                <Button
+                    android:id="@+id/button11"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r5"
+                    android:paddingTop="3dip"
+                    android:text="锐化效果" />
+
+                <Button
+                    android:id="@+id/button12"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/r_bg"
+                    android:drawableTop="@drawable/select_r5"
+                    android:paddingTop="3dip"
+                    android:text="饱和度" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#70000000"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/nine_patch_small_0" />
+
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/nine_patch_small_1" />
+
+                <ImageView
+                    android:id="@+id/imageview3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/nine_patch_small_2" />
+
+                <ImageView
+                    android:id="@+id/imageview4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/nine_patch_small_3" />
+
+                <ImageView
+                    android:id="@+id/imageview5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/nine_patch_small_4" />
+
+                <ImageView
+                    android:id="@+id/imageview6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/nine_patch_small_5" />
+
+                <ImageView
+                    android:id="@+id/imageview7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/nine_patch_small_0" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/tone_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:background="#70000000"
+            android:visibility="gone" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/imageFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progress_large"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/include_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/gallery_filter"
+            android:gravity="bottom" />
+    </FrameLayout>
+</RelativeLayout>
