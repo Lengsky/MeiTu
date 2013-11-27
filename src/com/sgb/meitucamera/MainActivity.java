@@ -6,6 +6,7 @@ import android.view.Menu;
 
 public class MainActivity extends FragmentActivity {
 
+	private int MkkA;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
