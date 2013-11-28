@@ -50,7 +50,7 @@ public class CameraPreview extends FragmentActivity implements SurfaceHolder.Cal
 	int pheight = 800;
 	
 	
-	int fcTTTTTTTTTTT = 600;
+	int fcAAA = 600;
 
 	private boolean isShutter = true;
 	private int downX;
